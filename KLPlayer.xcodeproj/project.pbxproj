@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,25 @@
 		2F35D1E925943180005AD340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F35D1E725943180005AD340 /* Main.storyboard */; };
 		2F35D1EB25943183005AD340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F35D1EA25943183005AD340 /* Assets.xcassets */; };
 		2F35D1EE25943183005AD340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F35D1EC25943183005AD340 /* LaunchScreen.storyboard */; };
+		2F35D1F72594368A005AD340 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D1F62594368A005AD340 /* PlayerViewController.swift */; };
+		2F35D20C25946A79005AD340 /* KLVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D20B25946A79005AD340 /* KLVideoView.m */; };
+		2F35D21125946B0F005AD340 /* KLVideoPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D21025946B0F005AD340 /* KLVideoPlayerControlView.m */; };
+		2F35D21625946CE1005AD340 /* KLVideoProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D21525946CE1005AD340 /* KLVideoProgressBar.m */; };
+		2F35D22025946F74005AD340 /* NSString+KLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D21F25946F74005AD340 /* NSString+KLExtension.m */; };
+		2F35D2252594703E005AD340 /* UIView+KLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D2242594703E005AD340 /* UIView+KLExtension.m */; };
+		2F35D22A2594720E005AD340 /* KLGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D2292594720E005AD340 /* KLGCDTimer.m */; };
+		2F35D233259476DA005AD340 /* KLPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2F35D232259476DA005AD340 /* KLPlayer.bundle */; };
+		2F35D23725947775005AD340 /* KLPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D23625947775005AD340 /* KLPlayerTool.m */; };
+		2F35D24125947D28005AD340 /* KLVideoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D23F25947D28005AD340 /* KLVideoProgressView.m */; };
+		2F35D24525947EB0005AD340 /* KLVideoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D24425947EB0005AD340 /* KLVideoLoadingView.m */; };
+		2F35D24E25948073005AD340 /* KLVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D24D25948073005AD340 /* KLVideoPlayerView.m */; };
+		2F35D25225948194005AD340 /* KLVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D25125948194005AD340 /* KLVideoPlayer.m */; };
+		2F35D2862594836E005AD340 /* KLVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D2802594836E005AD340 /* KLVideoCache.m */; };
+		2F35D2872594836E005AD340 /* KLVideoDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D2822594836E005AD340 /* KLVideoDownload.m */; };
+		2F35D2882594836E005AD340 /* KLVideoLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D2852594836E005AD340 /* KLVideoLoader.m */; };
+		2F35D28C2594842F005AD340 /* KLSandBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D28B2594842F005AD340 /* KLSandBox.m */; };
+		2F35D29725948E42005AD340 /* KLVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D29625948E42005AD340 /* KLVideoController.m */; };
+		C6A56CC5F0024333F0A89EC2 /* Pods_KLPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FA2E42AB1B17266526EAB /* Pods_KLPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +43,46 @@
 		2F35D1EA25943183005AD340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F35D1ED25943183005AD340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F35D1EF25943183005AD340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F35D1F62594368A005AD340 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		2F35D204259469FF005AD340 /* KLPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KLPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		2F35D20A25946A79005AD340 /* KLVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLVideoView.h; sourceTree = "<group>"; };
+		2F35D20B25946A79005AD340 /* KLVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLVideoView.m; sourceTree = "<group>"; };
+		2F35D20F25946B0F005AD340 /* KLVideoPlayerControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLVideoPlayerControlView.h; sourceTree = "<group>"; };
+		2F35D21025946B0F005AD340 /* KLVideoPlayerControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLVideoPlayerControlView.m; sourceTree = "<group>"; };
+		2F35D21425946CE1005AD340 /* KLVideoProgressBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLVideoProgressBar.h; sourceTree = "<group>"; };
+		2F35D21525946CE1005AD340 /* KLVideoProgressBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLVideoProgressBar.m; sourceTree = "<group>"; };
+		2F35D21E25946F74005AD340 /* NSString+KLExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+KLExtension.h"; sourceTree = "<group>"; };
+		2F35D21F25946F74005AD340 /* NSString+KLExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+KLExtension.m"; sourceTree = "<group>"; };
+		2F35D2232594703E005AD340 /* UIView+KLExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+KLExtension.h"; sourceTree = "<group>"; };
+		2F35D2242594703E005AD340 /* UIView+KLExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+KLExtension.m"; sourceTree = "<group>"; };
+		2F35D2282594720E005AD340 /* KLGCDTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLGCDTimer.h; sourceTree = "<group>"; };
+		2F35D2292594720E005AD340 /* KLGCDTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLGCDTimer.m; sourceTree = "<group>"; };
+		2F35D232259476DA005AD340 /* KLPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KLPlayer.bundle; sourceTree = "<group>"; };
+		2F35D23525947775005AD340 /* KLPlayerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLPlayerTool.h; sourceTree = "<group>"; };
+		2F35D23625947775005AD340 /* KLPlayerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLPlayerTool.m; sourceTree = "<group>"; };
+		2F35D23E25947D28005AD340 /* KLVideoPlayerProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLVideoPlayerProtocols.h; sourceTree = "<group>"; };
+		2F35D23F25947D28005AD340 /* KLVideoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLVideoProgressView.m; sourceTree = "<group>"; };
+		2F35D24025947D28005AD340 /* KLVideoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLVideoProgressView.h; sourceTree = "<group>"; };
+		2F35D24325947EB0005AD340 /* KLVideoLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLVideoLoadingView.h; sourceTree = "<group>"; };
+		2F35D24425947EB0005AD340 /* KLVideoLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLVideoLoadingView.m; sourceTree = "<group>"; };
+		2F35D24C25948073005AD340 /* KLVideoPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLVideoPlayerView.h; sourceTree = "<group>"; };
+		2F35D24D25948073005AD340 /* KLVideoPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLVideoPlayerView.m; sourceTree = "<group>"; };
+		2F35D25025948194005AD340 /* KLVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLVideoPlayer.h; sourceTree = "<group>"; };
+		2F35D25125948194005AD340 /* KLVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLVideoPlayer.m; sourceTree = "<group>"; };
+		2F35D2802594836E005AD340 /* KLVideoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLVideoCache.m; sourceTree = "<group>"; };
+		2F35D2812594836E005AD340 /* KLVideoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLVideoCache.h; sourceTree = "<group>"; };
+		2F35D2822594836E005AD340 /* KLVideoDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLVideoDownload.m; sourceTree = "<group>"; };
+		2F35D2832594836E005AD340 /* KLVideoLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLVideoLoader.h; sourceTree = "<group>"; };
+		2F35D2842594836E005AD340 /* KLVideoDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLVideoDownload.h; sourceTree = "<group>"; };
+		2F35D2852594836E005AD340 /* KLVideoLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLVideoLoader.m; sourceTree = "<group>"; };
+		2F35D28A2594842F005AD340 /* KLSandBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLSandBox.h; sourceTree = "<group>"; };
+		2F35D28B2594842F005AD340 /* KLSandBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLSandBox.m; sourceTree = "<group>"; };
+		2F35D28E259489EF005AD340 /* KLPlayerMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLPlayerMacros.h; sourceTree = "<group>"; };
+		2F35D29525948E42005AD340 /* KLVideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLVideoController.h; sourceTree = "<group>"; };
+		2F35D29625948E42005AD340 /* KLVideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLVideoController.m; sourceTree = "<group>"; };
+		4CB753CE49B9AC5A228C1A32 /* Pods-KLPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLPlayer.release.xcconfig"; path = "Target Support Files/Pods-KLPlayer/Pods-KLPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		656FA2E42AB1B17266526EAB /* Pods_KLPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFDF6E46931006AB0766FF8 /* Pods-KLPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLPlayer.debug.xcconfig"; path = "Target Support Files/Pods-KLPlayer/Pods-KLPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A56CC5F0024333F0A89EC2 /* Pods_KLPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +102,8 @@
 			children = (
 				2F35D1E025943180005AD340 /* KLPlayer */,
 				2F35D1DF25943180005AD340 /* Products */,
+				479F61E6993ACB9174435241 /* Pods */,
+				825EA26FFEE3F8AB7E5C0F38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +118,125 @@
 		2F35D1E025943180005AD340 /* KLPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				2F35D227259471F7005AD340 /* Utils */,
+				2F35D21D25946EF8005AD340 /* Extensions */,
+				2F35D20925946A18005AD340 /* Config */,
+				2F35D20325946823005AD340 /* Video */,
 				2F35D1E125943180005AD340 /* AppDelegate.swift */,
 				2F35D1E325943180005AD340 /* SceneDelegate.swift */,
 				2F35D1E525943180005AD340 /* ViewController.swift */,
+				2F35D1F62594368A005AD340 /* PlayerViewController.swift */,
 				2F35D1E725943180005AD340 /* Main.storyboard */,
 				2F35D1EA25943183005AD340 /* Assets.xcassets */,
 				2F35D1EC25943183005AD340 /* LaunchScreen.storyboard */,
-				2F35D1EF25943183005AD340 /* Info.plist */,
+				2F35D232259476DA005AD340 /* KLPlayer.bundle */,
 			);
 			path = KLPlayer;
+			sourceTree = "<group>";
+		};
+		2F35D20325946823005AD340 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				2F35D29F2594BA4B005AD340 /* View */,
+				2F35D29425948E2F005AD340 /* Public */,
+				2F35D27F25948336005AD340 /* Cache */,
+				2F35D23E25947D28005AD340 /* KLVideoPlayerProtocols.h */,
+				2F35D25025948194005AD340 /* KLVideoPlayer.h */,
+				2F35D25125948194005AD340 /* KLVideoPlayer.m */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		2F35D20925946A18005AD340 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2F35D204259469FF005AD340 /* KLPlayer-Bridging-Header.h */,
+				2F35D1EF25943183005AD340 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2F35D21D25946EF8005AD340 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F35D21E25946F74005AD340 /* NSString+KLExtension.h */,
+				2F35D21F25946F74005AD340 /* NSString+KLExtension.m */,
+				2F35D2232594703E005AD340 /* UIView+KLExtension.h */,
+				2F35D2242594703E005AD340 /* UIView+KLExtension.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2F35D227259471F7005AD340 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2F35D2282594720E005AD340 /* KLGCDTimer.h */,
+				2F35D2292594720E005AD340 /* KLGCDTimer.m */,
+				2F35D23525947775005AD340 /* KLPlayerTool.h */,
+				2F35D23625947775005AD340 /* KLPlayerTool.m */,
+				2F35D28A2594842F005AD340 /* KLSandBox.h */,
+				2F35D28B2594842F005AD340 /* KLSandBox.m */,
+				2F35D28E259489EF005AD340 /* KLPlayerMacros.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2F35D27F25948336005AD340 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				2F35D2812594836E005AD340 /* KLVideoCache.h */,
+				2F35D2802594836E005AD340 /* KLVideoCache.m */,
+				2F35D2842594836E005AD340 /* KLVideoDownload.h */,
+				2F35D2822594836E005AD340 /* KLVideoDownload.m */,
+				2F35D2832594836E005AD340 /* KLVideoLoader.h */,
+				2F35D2852594836E005AD340 /* KLVideoLoader.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		2F35D29425948E2F005AD340 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				2F35D29525948E42005AD340 /* KLVideoController.h */,
+				2F35D29625948E42005AD340 /* KLVideoController.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		2F35D29F2594BA4B005AD340 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F35D24025947D28005AD340 /* KLVideoProgressView.h */,
+				2F35D23F25947D28005AD340 /* KLVideoProgressView.m */,
+				2F35D20A25946A79005AD340 /* KLVideoView.h */,
+				2F35D20B25946A79005AD340 /* KLVideoView.m */,
+				2F35D20F25946B0F005AD340 /* KLVideoPlayerControlView.h */,
+				2F35D21025946B0F005AD340 /* KLVideoPlayerControlView.m */,
+				2F35D21425946CE1005AD340 /* KLVideoProgressBar.h */,
+				2F35D21525946CE1005AD340 /* KLVideoProgressBar.m */,
+				2F35D24325947EB0005AD340 /* KLVideoLoadingView.h */,
+				2F35D24425947EB0005AD340 /* KLVideoLoadingView.m */,
+				2F35D24C25948073005AD340 /* KLVideoPlayerView.h */,
+				2F35D24D25948073005AD340 /* KLVideoPlayerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		479F61E6993ACB9174435241 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCFDF6E46931006AB0766FF8 /* Pods-KLPlayer.debug.xcconfig */,
+				4CB753CE49B9AC5A228C1A32 /* Pods-KLPlayer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		825EA26FFEE3F8AB7E5C0F38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				656FA2E42AB1B17266526EAB /* Pods_KLPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F35D1F225943183005AD340 /* Build configuration list for PBXNativeTarget "KLPlayer" */;
 			buildPhases = (
+				CBD228E8A8A4B03853ED40FF /* [CP] Check Pods Manifest.lock */,
 				2F35D1DA25943180005AD340 /* Sources */,
 				2F35D1DB25943180005AD340 /* Frameworks */,
 				2F35D1DC25943180005AD340 /* Resources */,
+				81CBE64EF342FA77ED0B421A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -98,6 +272,7 @@
 				TargetAttributes = {
 					2F35D1DD25943180005AD340 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -127,19 +302,79 @@
 				2F35D1EE25943183005AD340 /* LaunchScreen.storyboard in Resources */,
 				2F35D1EB25943183005AD340 /* Assets.xcassets in Resources */,
 				2F35D1E925943180005AD340 /* Main.storyboard in Resources */,
+				2F35D233259476DA005AD340 /* KLPlayer.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81CBE64EF342FA77ED0B421A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KLPlayer/Pods-KLPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KLPlayer/Pods-KLPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KLPlayer/Pods-KLPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBD228E8A8A4B03853ED40FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KLPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F35D1DA25943180005AD340 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F35D23725947775005AD340 /* KLPlayerTool.m in Sources */,
+				2F35D22025946F74005AD340 /* NSString+KLExtension.m in Sources */,
+				2F35D21125946B0F005AD340 /* KLVideoPlayerControlView.m in Sources */,
 				2F35D1E625943180005AD340 /* ViewController.swift in Sources */,
+				2F35D24525947EB0005AD340 /* KLVideoLoadingView.m in Sources */,
+				2F35D28C2594842F005AD340 /* KLSandBox.m in Sources */,
+				2F35D1F72594368A005AD340 /* PlayerViewController.swift in Sources */,
+				2F35D20C25946A79005AD340 /* KLVideoView.m in Sources */,
+				2F35D29725948E42005AD340 /* KLVideoController.m in Sources */,
+				2F35D2872594836E005AD340 /* KLVideoDownload.m in Sources */,
+				2F35D24125947D28005AD340 /* KLVideoProgressView.m in Sources */,
+				2F35D2252594703E005AD340 /* UIView+KLExtension.m in Sources */,
 				2F35D1E225943180005AD340 /* AppDelegate.swift in Sources */,
+				2F35D2882594836E005AD340 /* KLVideoLoader.m in Sources */,
+				2F35D25225948194005AD340 /* KLVideoPlayer.m in Sources */,
+				2F35D2862594836E005AD340 /* KLVideoCache.m in Sources */,
+				2F35D24E25948073005AD340 /* KLVideoPlayerView.m in Sources */,
+				2F35D22A2594720E005AD340 /* KLGCDTimer.m in Sources */,
 				2F35D1E425943180005AD340 /* SceneDelegate.swift in Sources */,
+				2F35D21625946CE1005AD340 /* KLVideoProgressBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,17 +518,21 @@
 		};
 		2F35D1F325943183005AD340 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCFDF6E46931006AB0766FF8 /* Pods-KLPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KLPlayer/Info.plist;
+				INFOPLIST_FILE = KLPlayer/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dnduuhn.KLPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KLPlayer/Config/KLPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,17 +540,20 @@
 		};
 		2F35D1F425943183005AD340 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB753CE49B9AC5A228C1A32 /* Pods-KLPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KLPlayer/Info.plist;
+				INFOPLIST_FILE = KLPlayer/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dnduuhn.KLPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KLPlayer/Config/KLPlayer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
