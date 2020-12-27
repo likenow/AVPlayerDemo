@@ -2,7 +2,7 @@
 Play while downloading by AVPlayer
 
 ## blog
-[AVPlayer 边下边播](https://github.com/likenow/blog/blob/master/articles/2020-12-24-AVFoundation%E8%BE%B9%E4%B8%8B%E8%BE%B9%E6%92%AD.md)
+[AVPlayer 边下边播](https://github.com/likenow/blog/blob/master/articles/2020-12-24-AVPlayer%E8%BE%B9%E4%B8%8B%E8%BE%B9%E6%92%AD.md)
 
 ## AVPlayer 边下边播
 
@@ -14,7 +14,7 @@ Play while downloading by AVPlayer
 
 ### AVPlayer 整体播放流程
 
-<img src="../assets/image-20201225145234126.png" alt="image-20201225145234126" style="zoom:70%;" />
+<img src="https://github.com/likenow/blog/blob/master/assets/image-20201225145234126.png" alt="image-20201225145234126" style="zoom:70%;" />
 
 注意！在初始化 `AVURLAsset` 的时候需要把目标视频 URL 地址的 **scheme** 替换为系统不能识别的 **scheme ** 否则不能触发代理方法！！！
 
@@ -77,6 +77,6 @@ self.player = [[AVPlayer alloc] initWithPlayerItem:self.playerItem];
 
 #### 3 VideoDownload
 
-<img src="../assets/image-20201225152421336.png" alt="image-20201225152421336" style="zoom:70%;" />
+<img src="https://github.com/likenow/blog/blob/master/assets/image-20201225152421336.png" alt="image-20201225152421336" style="zoom:70%;" />
 
 在 `shouldWaitForLoadingOfRequestedResource` 回调中异步开启下载任务。下载回调中拿到的响应数据对 `loadingRequest` 进行填充。并对数据进行缓存。
