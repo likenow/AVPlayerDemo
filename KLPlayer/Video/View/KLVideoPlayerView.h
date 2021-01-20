@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 是否以第一帧（封面图）作为结束播放的最后画面，默认是 NO
 @property (nonatomic, assign) BOOL isEndByFirstFrameImage;
+/// 播放完成
+@property (nonatomic, assign, readonly) BOOL playFinished;
 
 - (void)setControlViewIsShow:(BOOL)show;
 

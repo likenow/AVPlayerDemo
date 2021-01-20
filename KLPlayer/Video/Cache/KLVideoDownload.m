@@ -10,6 +10,7 @@
 #import "KLVideoCache.h"
 #import "KLPlayerTool.h"
 #import "KLSandBox.h"
+#import "KLVideoCache.h"
 
 NSString *kKLVideoMIMETypeKey = @"kKLVideoMIMETypeKey";
 
@@ -266,6 +267,12 @@ NSString *kKLVideoMIMETypeKey = @"kKLVideoMIMETypeKey";
     } else {
         NSFileManager *fileManager = [NSFileManager defaultManager];
         NSError *error = nil;
+        // 缓存清理
+        KLVideoCache *cache = [KLVideoCache sharedVideoCache];
+        NSString *path = [[KLVideoCache sharedVideoCache] baseVideoPath];
+        [cache lruCacheWithTargetPath:path];
+
+        
         BOOL moved = [fileManager moveItemAtPath:self.tempFilePath toPath:self.realFilePath error:&error];
         if (moved) {
             [KLSandBox setCustomAttributeForFileAtPath:self.realFilePath key:kKLVideoMIMETypeKey value:self.MIMEType];

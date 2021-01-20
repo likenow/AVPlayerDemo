@@ -59,6 +59,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param error 如果移除过程发生错误，通过该参数返回错误信息
 - (BOOL)removeAllCachesWithError:(NSError * _Nullable*)error;
 
+/// 获取路径下缓存文件大小
+- (NSInteger)cacheSizeWithFilePath:(NSString *)path;
+
+/// 清理路径的文件
+- (void)lruCacheWithTargetPath:(NSString *)path;
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END

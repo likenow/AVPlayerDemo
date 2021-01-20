@@ -24,12 +24,15 @@
 @property (nonatomic, strong) KLVideoLoader *videoLoader;
 @property (nonatomic, strong) AVURLAsset *urlAsset;
 
+@property (nonatomic, strong) id playbackObserver;
+
 @end
 
 @implementation KLVideoPlayer
 
 - (void)dealloc
 {
+    [self clearCurrentVideoResource];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
@@ -66,7 +69,7 @@
         [self addPlayItemObserver];
         
         __weak typeof(self) weakSelf = self;
-        [self.player addPeriodicTimeObserverForInterval:CMTimeMake(1, 1) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+        self.playbackObserver = [self.player addPeriodicTimeObserverForInterval:CMTimeMake(1, 1) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
             [weakSelf playToTime:time];
         }];
         
@@ -99,7 +102,27 @@
 
 - (void)clearCurrentVideoResource
 {
+    if (self.playerItem) {
+        // 释放一个正在播放的视频时，需要先调用pause方法
+        [self pause];
+        // 释放资源
+        [self.playerItem cancelPendingSeeks];
+        [self.playerItem.asset cancelLoading];
+        if (self.player) {
+            [self.player replaceCurrentItemWithPlayerItem:nil];
+        }
+    }
+    
+    
+    if (self.playbackObserver) {
+        [self.player removeTimeObserver:self.playbackObserver];
+        self.playbackObserver = nil;
+    }
+    
+    // 释放资源
     self.videoURL = nil;
+    self.urlAsset = nil;
+    self.videoLoader = nil;
     [self removePlayItemObserver];
     self.player = nil;
     self.playerItem = nil;

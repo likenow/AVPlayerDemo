@@ -51,15 +51,37 @@ NSNotificationName kKLVideoPlayStateDidChangeNotification = @"kKLVideoPlayStateD
         _videoPlayer = [[KLVideoPlayer alloc] initWithVideoURL:videoURL downloadWhilePlay:download];
         [_videoPlayer addDelegate:self];
         _isLooping = YES;
+        _isAutoDispose = NO;
         _playerView = [[KLVideoPlayerView alloc] initWithFrame:frame];
         AVPlayerLayer *playerLayer = [_videoPlayer createPlayerLayerForCurrenPlayer];
         playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
         _playerView.playerLayer = playerLayer;
         _playerView.delegate = self;
-        [_playerView setFirstFrameImageURL:firstFrameImage];
+        if (firstFrameImage.length > 0) {
+            [_playerView setFirstFrameImageURL:firstFrameImage];
+        } else {
+            [self firstFrameWithVideoURL:videoURL];
+        }
+        
     }
     return self;
 }
+
+/// 获取视频第一帧
+- (UIImage *)firstFrameWithVideoURL:(NSURL *)url {
+    AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:url options:nil];
+    AVAssetImageGenerator *assetGen = [[AVAssetImageGenerator alloc] initWithAsset:asset];
+    assetGen.appliesPreferredTrackTransform = YES;
+    
+    CMTime time = CMTimeMakeWithSeconds(0.0, 600);// 与清晰度相关
+    NSError *error = nil;
+    CMTime actualTime;
+    CGImageRef image = [assetGen copyCGImageAtTime:time actualTime:&actualTime error:&error];
+    UIImage *videoImage = [[UIImage alloc] initWithCGImage:image];
+    CGImageRelease(image);
+    return videoImage;
+}
+
 
 - (void)setVideoHasReadBlock:(void (^)(void))block
 {
@@ -152,6 +174,9 @@ NSNotificationName kKLVideoPlayStateDidChangeNotification = @"kKLVideoPlayStateD
         [self.videoPlayer replayCurrentItemWithCompletion:^(BOOL finished) {
             
         }];
+    }
+    if (self.isAutoDispose) {
+        [self.videoPlayer clearCurrentVideoResource];
     }
 }
 

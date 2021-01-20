@@ -36,6 +36,7 @@ class PlayerViewController: UIViewController {
         }
         
         self.videoPlayer.isLooping = false
+        self.videoPlayer.isAutoDispose = true
         self.videoPlayer.videoPlayer.muted = true
         self.videoPlayer.playerView.isEndByFirstFrameImage = true
         self.adContentView.addSubview(self.videoPlayer.playerView)
@@ -80,6 +81,7 @@ class PlayerViewController: UIViewController {
     
     @objc func handleDismiss(_ sender: UIButton) {
         // play
+        print("\(self.videoPlayer.playerView.playFinished)")
         self.dismiss(animated: true)
     }
 }

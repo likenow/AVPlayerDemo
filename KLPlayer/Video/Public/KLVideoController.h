@@ -17,6 +17,7 @@ FOUNDATION_EXTERN NSNotificationName kKLVideoPlayStateDidChangeNotification;
 @interface KLVideoController : NSObject
 /// 是否循环播放，默认会循环播放
 @property (nonatomic, assign) BOOL isLooping;
+@property (nonatomic, assign) BOOL isAutoDispose;
 
 @property (nonatomic, strong, readonly) KLVideoPlayer *videoPlayer;
 @property (nonatomic, strong, readonly) KLVideoPlayerView *playerView;
